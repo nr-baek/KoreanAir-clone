@@ -143,13 +143,14 @@
   max-width: 128rem;
   margin: 0 auto;
   position: absolute;
-  left: 4rem;
+  padding-left: 4rem;
+  left: 0;
   right: 0;
   top: 12.5rem;
 }
 .route-carousel .route-carousel__wrap div .carousel_explain_wrapper .carousel_explain {
   width: calc(100% - 42rem);
-  display: inline-block;
+  max-width: 80rem;
   text-shadow: 0.1rem 0.1rem 0.3rem #fff;
   z-index: 9999;
 }
@@ -157,8 +158,6 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 4.5rem;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 5rem;
 }
 .route-carousel .route-carousel__wrap div .carousel_explain_wrapper .carousel_explain p .small {
@@ -771,6 +770,7 @@
   display: inline-block;
   position: relative;
   width: calc(((100%) - 1.95rem) / 6);
+  padding: 0 1.3rem 0 1.4rem;
 }
 .additional-service-link-wrapper .additional-service-link ul li a {
   display: flex;
@@ -785,6 +785,8 @@
   background-repeat: no-repeat;
 }
 .additional-service-link-wrapper .additional-service-link ul li a span {
+  text-align: center;
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.64;
@@ -854,6 +856,13 @@ footer .footer-menu-wrapper .footer-menu .menus .column h3 {
 }
 footer .footer-menu-wrapper .footer-menu .menus .column li {
   margin: 0.8rem 0;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 footer .footer-menu-wrapper .footer-menu .menus .column li a {
   font-size: 1.4rem;
